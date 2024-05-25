@@ -70,7 +70,7 @@
         </div>
 
         <div class="p-2">
-          <p class="text-2xl font-bold bg-slate-200 my-2 px-2">PlaySK Piano Roll Reader / ピアノロールのエミュレーションソフト</p>
+          <p class="text-2xl font-bold bg-slate-200 my-2 px-2" id="PlaySK Piano Roll Reader">PlaySK Piano Roll Reader / ピアノロールのエミュレーションソフト</p>
           
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div class="h-full flex items-center justify-center">
@@ -176,7 +176,7 @@
         </div>
 
         <div class="p-2 mt-15">
-          <p class="text-2xl font-bold bg-slate-200 my-2 px-2">手書き数字認識デモアプリ</p>
+          <p class="text-2xl font-bold bg-slate-200 my-2 px-2" id="Digit Recognition">手書き数字認識デモアプリ</p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <img src="img/DigitRecog.gif">
             <div>
@@ -200,7 +200,7 @@
         </div>
 
         <div class="p-2 mt-15">
-          <p class="text-2xl font-bold bg-slate-200 my-2 px-2">ChatGPT風のアプリ</p>
+          <p class="text-2xl font-bold bg-slate-200 my-2 px-2" id="My ChatGPT">ChatGPT風のアプリ</p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <img src="img/ChatWebUI.gif">
             <div>
@@ -230,7 +230,7 @@
         </div>
 
         <div class="p-2 mt-15">
-          <p class="text-2xl font-bold bg-slate-200 my-2">ピアノロールのスキャン装置</p>
+          <p class="text-2xl font-bold bg-slate-200 my-2" id="Piano Roll Scanner">ピアノロールのスキャン装置</p>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <iframe class="w-full h-[315px]" src="https://www.youtube.com/embed/q2dUdIUTXZ4?si=aQL7AB7xFTpTfNz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -240,7 +240,7 @@
           </div>
 
           <p>一般的なピアノロールの読取装置はロールを巻き取りながら一次元のラインスキャンセンサーで連続的に撮影するため専用ハードが必要です。</p>
-          <p>この装置は市販カメラを用いて、ピアノロールの撮影と紙送りを自動で繰り返し、撮影した数百枚の画像をソフトウェアで自動で繋ぎ合わせます。</p>
+          <p>この装置は市販カメラを用いて、ピアノロールの撮影と紙送りを自動で繰り返し、撮影した数百枚の画像をソフトウェアで自動的に繋ぎ合わせます。</p>
           <p>紙送りはebayで落札した実物の自動演奏ピアノの巻き取り装置をArduinoで制御したステッピングモーターで駆動し、撮影は一眼カメラ付属のソフト(Imaging Edge)をpywinautoで自動操作しています。</p>
           <p>位置合わせでは画像同士のオーバーラップ部分で画素の差分が最小となる座標を算出して繋ぎ合わせています。</p>
           <p>性質上、繋ぎ合わせの部分に僅かなズレが生じますが、PlaySK Piano Roll Readerでエミュレートする分には問題ありません。</p>

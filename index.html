@@ -17,8 +17,8 @@
     <header>
       <div class="relative">
         <img class="mx-auto" src="img/Yubari_2012.jpg">
-        <p class="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl md:text-7xl">About Katz Sasaki</p>
-        <p class="absolute bottom-2 right-2 text-white">旧白銀橋 北海道夕張市, 2012年8月撮影</p>
+        <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl md:text-7xl">About Katz Sasaki</p>
+        <p class="absolute bottom-2 right-2 text-white invisible md:visible">旧白銀橋 北海道夕張市, 2012年8月撮影</p>
       </div>
     </header>
     <div class="px-10">
@@ -177,57 +177,66 @@
 
         <div class="p-2 mt-15">
           <p class="text-2xl font-bold bg-slate-200 my-2 px-2">手書き数字認識デモアプリ</p>
-          <img class="w-1/2 float-left m-3" src="img/DigitRecog.gif">
-          <p>
-            昔、機械学習の勉強で作成したシンプルな手書き数字認識のWebアプリです。ネットワークは2層のCNNと全結合層で、MNISTの手書き画像を学習しています。</p>
-            <p>バックエンドはPython/Flask/pytorch、フロントエンドはHTML5/JavaScript/TailwindCSSで構成。</p>
-            <p>以前は自宅SVにホストしていましたが、現在はGoogle App Engineにホストしています。</p>
-          </p>
-          <div class="flex flex-wrap gap-2 m-5">
-            <div class="bg-blue-400 text-xl text-white py-3 px-10 rounded-xl"> 
-              <a class="block" href="https://digit-recog-torch.uc.r.appspot.com/" target="_blank">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Site
-              </a>
-            </div>
-            <div class="bg-blue-400 text-xl text-white py-3 px-10 rounded-xl"> 
-              <a class="block" href="https://github.com/nai-kon/PlaySK-Piano-Roll-Reader" target="_blank">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img src="img/DigitRecog.gif">
+            <div>
+              <p>昔、機械学習の勉強で作成したシンプルな手書き数字認識のWebアプリです。ネットワークは2層のCNNと全結合層で、MNISTの手書き画像を学習しています。</p>
+              <p>バックエンドはPython/Flask/pytorch、フロントエンドはHTML5/JavaScript/TailwindCSSで構成。</p>
+              <p>以前は自宅SVにホストしていましたが、現在はGoogle App Engineにホストしています。</p>
+              <div class="flex flex-wrap gap-2 my-5">
+                <div class="bg-blue-400 text-xl text-white py-3 px-10 rounded-xl"> 
+                  <a href="https://digit-recog-torch.uc.r.appspot.com/" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Site
+                  </a>
+                </div>
+                <div class="bg-blue-400 text-xl text-white py-3 px-10 rounded-xl"> 
+                  <a href="https://github.com/nai-kon/PlaySK-Piano-Roll-Reader" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="p-2 mt-20 clear-both">
+        <div class="p-2 mt-15">
           <p class="text-2xl font-bold bg-slate-200 my-2 px-2">ChatGPT風のアプリ</p>
-          <img class="w-1/2 float-left m-3" src="img/ChatWebUI.gif">
-          <p>OpenAI社のGPT-4のAPIを呼ぶChatGPT風のWebアプリです。これまで月額3000円でChatGPT Plusを契約していましたがAPIを呼んだ方が安上がりのため自作しました。</p>
-          <p>Vite+React+TailwindCSSで構成しています。チャット履歴はブラウザのローカルストレージに保存し、Windowsのスタートアップスクリプトでnpm run devする簡易仕様です。</p>
-          <div class="flex gap-2 m-5">
-            <div class="bg-blue-400 text-xl text-white py-3 px-10 rounded-xl"> 
-              <a class="block" href="https://github.com/nai-kon/PrivateChatGPT" target="_blank">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img src="img/ChatWebUI.gif">
+            <div>
+              <p>OpenAI社のGPT-4のAPIを呼ぶChatGPT風のWebアプリです。これまで月額3000円でChatGPT Plusを契約していましたがAPIを呼んだ方が安上がりのため自作しました。</p>
+              <p>Vite+React+TailwindCSSで構成しています。チャット履歴はブラウザのローカルストレージに保存し、Windowsのスタートアップスクリプトでnpm run devする簡易仕様です。</p>
+              <div class="flex gap-2 my-5">
+                <div class="bg-blue-400 text-xl text-white py-3 px-10 rounded-xl"> 
+                  <a href="https://github.com/nai-kon/PrivateChatGPT" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="p-2 mt-20 clear-both">
+        <div class="p-2 mt-15">
           <p class="text-2xl font-bold bg-slate-200 my-2 px-2">Twitterの画像をAIで選別して表示するアプリ</p>
-          <div class="w-1/2 h-[300px] bg-slate-100 m-3 float-left text-center">画像準備中</div>
-          <p>マルチモーダルAI(BLIP-2)を用いてTwitterのタイムライン画像や検索画像を分類して、欲しい画像だけをフィルタして表示するアプリです。</p>
-          <p>Seleniumでブラウザからタイムライン画像をスクレイピングし、画像に写っている物体をVQAで一問一答してフィルタリングし一覧表示します。</p>
-          <p>ImageNetで学習したResNetでの画像分類も考えられますが、ImageNetの分類ラベルに欲しい分類が無い & BLIP-2だと物体の状態(例:"座っている犬" or "走っている犬")まで解るためVQAを使用しています。</p>
-          <p>バックエンドはPython/Flask/pytorch、フロントエンドはHTML5/JavaScript/TailwindCSSで構成しています。</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-slate-100 text-center justify-center">画像準備中</div>
+            <div>
+              <p>マルチモーダルAI(BLIP-2)を用いてTwitterのタイムライン画像や検索画像を分類して、欲しい画像だけをフィルタして表示するアプリです。</p>
+              <p>Seleniumでブラウザからタイムライン画像をスクレイピングし、画像に写っている物体をVQAで一問一答してフィルタリングし一覧表示します。</p>
+              <p>ImageNetで学習したResNetでの画像分類も考えられますが、ImageNetの分類ラベルに欲しい分類が無い & BLIP-2だと物体の状態(例:"座っている犬" or "走っている犬")まで解るためVQAを使用しています。</p>
+              <p>バックエンドはPython/Flask/pytorch、フロントエンドはHTML5/JavaScript/TailwindCSSで構成しています。</p>
+            </div>
         </div>
 
-        <div class="p-2 mt-20 clear-both">
+        <div class="p-2 mt-15">
           <p class="text-2xl font-bold bg-slate-200 my-2">ピアノロールのスキャン装置</p>
 
-          <div class="">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <iframe class="w-full h-[315px]" src="https://www.youtube.com/embed/q2dUdIUTXZ4?si=aQL7AB7xFTpTfNz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <a href="img/Homebuild Piano Roll Scanner.jpg" data-lightbox="group2">
-              <img class="h-[315px] float-left mr-2" src="img/Homebuild Piano Roll Scanner.jpg">
+              <img class="h-[315px]" src="img/Homebuild Piano Roll Scanner.jpg">
             </a>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/q2dUdIUTXZ4?si=aQL7AB7xFTpTfNz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
           <p>一般的なピアノロールの読取装置はロールを巻き取りながら一次元のラインスキャンセンサーで連続的に撮影するため専用ハードが必要です。</p>
@@ -236,28 +245,21 @@
           <p>位置合わせでは画像同士のオーバーラップ部分で画素の差分が最小となる座標を算出して繋ぎ合わせています。</p>
           <p>性質上、繋ぎ合わせの部分に僅かなズレが生じますが、PlaySK Piano Roll Readerでエミュレートする分には問題ありません。</p>
 
-          <p class="font-bold pt-2 clear-both">・繋ぎ合わせ結果 (Duo-Art 5540 El Choclo)</p>
-          
-          <a href="img/Duo-Art El Choclo.jpg" data-lightbox="group2">
-            <img class="h-[200px] float-left m-2" src="img/Duo-Art El Choclo.jpg">
-          </a>
-          <a href="img/Scan1.jpg" data-lightbox="group2">
-            <img class="h-[200px] float-left m-2" src="img/Scan1.jpg">
-          </a>
-          <a href="img/Scan2.jpg" data-lightbox="group2">
-            <img class="h-[200px] float-left m-2" src="img/Scan2.jpg">
-          </a>
-          <a href="img/Scan3.jpg" data-lightbox="group2">
-            <img class="h-[200px] float-left m-2" src="img/Scan3.jpg">
-          </a>
-          <a href="img/Duo-Art 5540 El Choclo tempo70.tif" target="_blank"><img class="h-[200px] float-left m-2" src="img/Duo-Art 5540 thumb.jpg"></a>
+          <p class="font-bold pt-2">・繋ぎ合わせ結果 (Duo-Art 5540 El Choclo)</p>          
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-2">
+            <a href="img/Duo-Art El Choclo.jpg" data-lightbox="group2"><img class="h-[200px]" src="img/Duo-Art El Choclo.jpg"></a>
+            <a href="img/Scan1.jpg" data-lightbox="group2"><img class="h-[200px]" src="img/Scan1.jpg"></a>
+            <a href="img/Scan2.jpg" data-lightbox="group2"><img class="h-[200px]" src="img/Scan2.jpg"></a>
+            <a href="img/Scan3.jpg" data-lightbox="group2"><img class="h-[200px]" src="img/Scan3.jpg"></a>
+            <a href="img/Duo-Art 5540 El Choclo tempo70.tif" target="_blank"><img class="h-[200px]" src="img/Duo-Art 5540 thumb.jpg"></a>
+          </div>
 
-          <p class="font-bold pt-2 clear-both">・PlaySK Piano Roll Readerでの演奏例 (Duo-Art 5877 Chopin Piano Sonata No.3 4th mvt)</p>
-          <a href="img/Duo-Art Chopin Sonata.jpg" data-lightbox="group2">
-            <img class="h-[315px] float-left m-2" src="img/Duo-Art Chopin Sonata.jpg">
-          </a>
-          <a href="img/Duo-Art 5877 Chopin Sonara No.3 finale tempo90.tif" target="_blank"><img class="h-[315px] float-left m-2" src="img/Duo-Art 5877 thumb.jpg"></a>
-          <iframe class="w-[560px] h-[315px] m-2" src="https://www.youtube.com/embed/dP3rEjN3nOM?si=jMZaiQOWMjMVys4B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p class="font-bold pt-2 clear-both">・PlaySK Piano Roll Readerでの演奏例 (Duo-Art 5877 Chopin Piano Sonata No.3 4th mvt)</p> 
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-2 justify-items-start">
+            <a href="img/Duo-Art Chopin Sonata.jpg" data-lightbox="group2"><img class="h-[315px]" src="img/Duo-Art Chopin Sonata.jpg"></a>
+            <iframe class="w-full h-[315px]" src="https://www.youtube.com/embed/dP3rEjN3nOM?si=jMZaiQOWMjMVys4B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <a href="img/Duo-Art 5877 Chopin Sonara No.3 finale tempo90.tif" target="_blank"><img class="h-[315px]" src="img/Duo-Art 5877 thumb.jpg"></a>
+          </div>
         </div>
       </div>
     </div>

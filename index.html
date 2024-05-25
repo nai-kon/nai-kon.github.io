@@ -14,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
   </head>
   <body>
+    <!-- header -->
     <header>
       <div class="relative">
         <img class="mx-auto" src="img/Yubari_2012.jpg">
@@ -23,6 +24,7 @@
     </header>
     <div class="px-3 md:px-10">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- profile -->
         <div class="py-5 grid-item" id="profile">
           <div class="flex bg-slate-600 text-white">
             <i class="fa-solid fa-user text-3xl mx-2"></i>
@@ -36,6 +38,7 @@
             <li>Interesting in digitalize historic player piano rolls</li>  
           </ul>
         </div>
+        <!-- certification -->
         <div class="py-5 grid-item" id="cert">
           <div class="flex bg-slate-600 text-white">
             <i class="fa-regular fa-id-card text-3xl mx-2"></i>
@@ -49,6 +52,7 @@
             <li>普通自動車第一種免許 (MT) </li>  
           </ul>
         </div>
+        <!-- link -->
         <div class="py-5 grid-item" id="links">
           <div class="flex bg-slate-600 text-white">
             <i class="fa-solid fa-link text-3xl mx-2"></i>
@@ -63,6 +67,7 @@
         </div>
       </div>
       
+      <!-- works -->
       <div class="py-5" id="works">
         <div class="flex bg-slate-600 text-white">
           <i class="fa-solid fa-code text-3xl mx-2"></i>
@@ -227,11 +232,11 @@
               <p>ImageNetで学習したResNetでの画像分類も考えられますが、ImageNetの分類ラベルに欲しい分類が無い & BLIP-2だと物体の状態(例:"座っている犬" or "走っている犬")まで解るためVQAを使用しています。</p>
               <p>バックエンドはPython/Flask/pytorch、フロントエンドはHTML5/JavaScript/TailwindCSSで構成しています。</p>
             </div>
+          </div>
         </div>
 
         <div class="p-2 mt-15">
-          <p class="text-2xl font-bold bg-slate-200 my-2" id="Piano Roll Scanner">ピアノロールのスキャン装置</p>
-
+          <p class="text-2xl font-bold bg-slate-200 my-2 px-2" id="Piano Roll Scanner">ピアノロールのスキャン装置</p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <iframe class="w-full h-[315px]" src="https://www.youtube.com/embed/q2dUdIUTXZ4?si=aQL7AB7xFTpTfNz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <a href="img/Homebuild Piano Roll Scanner.jpg" data-lightbox="group2">

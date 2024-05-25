@@ -210,7 +210,8 @@
             <img src="img/ChatWebUI.gif">
             <div>
               <p>OpenAI社のGPT-4のAPIを呼ぶChatGPT風のWebアプリです。これまで月額3000円でChatGPT Plusを契約していましたがAPIを呼んだ方が安上がりのため自作しました。</p>
-              <p>Vite+React+TailwindCSSで構成しています。チャット履歴はブラウザのローカルストレージに保存し、Windowsのスタートアップスクリプトでnpm run devする簡易仕様です。</p>
+              <p>本家同様、チャットのタイトルを自動生成する動作がミソです。</p>
+              <p>Vite+React+TailwindCSSで構成しています。Windowsのスタートアップスクリプトからnpm run devで起動し、チャット履歴はブラウザのローカルストレージに保存するシンプルな仕様です。</p>
               <div class="flex gap-2 my-5">
                 <div class="bg-blue-400 text-xl text-white py-3 px-10 rounded-xl"> 
                   <a href="https://github.com/nai-kon/PrivateChatGPT" target="_blank">
@@ -227,9 +228,9 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <img src="img/img_filter.gif">
             <div>
-              <p>マルチモーダルAI(BLIP-2)を用いてTwitterのタイムライン画像や検索画像を分類して、欲しい画像だけをフィルタして表示するアプリです。</p>
-              <p>Seleniumでブラウザからタイムライン画像をスクレイピングし、画像に写っている物体をVQAで一問一答してフィルタリングし一覧表示します。</p>
-              <p>ImageNetで学習したResNetでの画像分類も考えられますが、ImageNetの分類ラベルに欲しい分類が無い & BLIP-2だと物体の状態(例:"座っている犬" or "走っている犬")まで解るためVQAを使用しています。</p>
+              <p>マルチモーダルAI(BLIP-2)でTwitterの画像をお好みで分類して表示するアプリです。</p>
+              <p>Seleniumでブラウザから画像をスクレイピングし、VQAで一問一答して分類を行い一覧表示します。</p>
+              <p>ImageNetで学習したResNetでの画像分類も可能ですが、ImageNetの分類ラベルに欲しい分類が無い & BLIP-2だと物体の状態(例:"座っている犬" or "走っている犬")まで解るためVQAを使用しています。</p>
               <p>バックエンドはPython/Flask/pytorch、フロントエンドはHTML5/JavaScript/TailwindCSSで構成しています。</p>
             </div>
           </div>
@@ -273,5 +274,6 @@
       <p>©Sasaki Katsumasa 2024  All rights reserved</p>
     </footer>
 
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "67761aac709f4240a3d4ca0478f0e7e2"}'></script><!-- End Cloudflare Web Analytics -->
   </body>
 </html>

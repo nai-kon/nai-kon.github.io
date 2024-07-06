@@ -35,7 +35,22 @@
             <li>Live in Tokyo, Japan. Born in Sapporo, Hokkaido</li>
             <li>ML engineer / Software developer</li>
             <li>Works at Tax-Accounting system vendor in Japan</li>  
-            <li>Interested in digitalize historic player piano rolls</li>  
+            <li>Interesting in digitalize historic player piano rolls</li>  
+          </ul>
+        </div>
+        <!-- certification -->
+        <div class="py-5 grid-item" id="cert">
+          <div class="flex bg-slate-600 text-white">
+            <i class="fa-regular fa-id-card text-3xl mx-2"></i>
+            <h1 class="text-3xl font-bold">Certification </h1>
+          </div>
+          <ul class="list-inside list-disc p-2">
+            <li>基本情報技術者 </li>
+            <li>応用情報技術者</li>
+            <li>JDLA G検定</li>
+            <li>日商簿記検定3級</li>
+            <li>TOEIC L&R 770点 (Listening 375/Reading 395、2013年11月 公開テスト) </li>
+            <li>普通自動車第一種免許 (MT) </li>  
           </ul>
         </div>
         <!-- link -->
@@ -67,12 +82,12 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div class="h-full flex items-center justify-center">
               <a href="img/Ampico Roll.jpg" data-lightbox="group1">
-                <img class="object-contain w-full" src="img/Ampico Roll.jpg">
+                <img class="object-contain h-[300px]" src="img/Ampico Roll.jpg">
               </a>
             </div>
             <div class="h-full flex items-center justify-center">
               <a href="img/PlaySK on Mac.jpg" data-lightbox="group1">
-                <img class="object-contain w-full" src="img/PlaySK on Mac.jpg">
+                <img class="object-contain h-[300px]" src="img/PlaySK on Mac.jpg">
               </a>
             </div>
             <div class="h-full flex items-center justify-center">
@@ -82,30 +97,10 @@
           
           <p>約100年前の自動演奏ピアノのピアノロール画像を読み取り、音やペダル、強弱をリアルタイムにエミュレーションしてMIDIを出力する世界的に珍しいソフトです。</p>
           <p>MIDIを音源ソフトやヤマハの自動演奏ピアノに出力すれば100年前の演奏を現代に蘇らせることが出来ます。</p>
-          <p>2014年の初版以降改良を重ね、現在ではアメリカを中心とする英語圏のユーザーから支持を得ており、ユーザーの要望に応じた機能追加を随時行っています。</p>
-          
-          <ul class="list-inside list-disc">
-            <li>言語/FW/Lib：Python, wxPython, OpenCV, NumPy, Cython, Mido</li>
-            <li>開発：VSCode, GitHub, Poetry</li>
-            <li>CI/CD：GitHub Actions(テスト、ビルド、コード署名、リリース)</li>
-          </ul>
+          <p>2014年の初版以降改良を重ね、現在ではアメリカを始めとする英語圏のユーザーから支持を得ており、ユーザーの要望に応じた機能追加を随時行っています。</p>
+          <p>Python製でGUIにwxpyhonを使っています。画素計算やファイルのデコード処理はnumpyやCythonで高速化しています。また、GitHub Actionsでユニットテストやリリースバイナリの作成・署名のCI/CDを構築して自動化しています。</p>
 
           <div class="flex flex-wrap gap-2 my-5">
-            <a href="https://github.com/nai-kon/PlaySK-Piano-Roll-Reader/releases/latest/download/PlaySK-PianoRoll-Reader-Win.x64.zip" target="_blank">
-              <div class="text-xl text-white py-3 px-10 rounded-xl bg-green-400 hover:bg-green-500"> 
-                Windows <i class="fa-solid fa-download"></i>
-              </div>
-            </a>                
-            <a href="https://github.com/nai-kon/PlaySK-Piano-Roll-Reader/releases/latest/download/PlaySK-PianoRoll-Reader-Mac.ARM.zip" target="_blank">
-              <div class="text-xl text-white py-3 px-10 rounded-xl bg-green-400 hover:bg-green-500"> 
-                Mac (M1~3) <i class="fa-solid fa-download"></i>
-              </div>
-            </a>
-            <a href="https://github.com/nai-kon/PlaySK-Piano-Roll-Reader/releases/latest/download/PlaySK-PianoRoll-Reader-Mac.x64.zip" target="_blank">
-              <div class="text-xl text-white py-3 px-10 rounded-xl bg-green-400 hover:bg-green-500"> 
-                Mac (Intel) <i class="fa-solid fa-download"></i>
-              </div>
-            </a>
             <a href="https://github.com/nai-kon/PlaySK-Piano-Roll-Reader" target="_blank">
               <div class="text-xl text-white py-3 px-10 rounded-xl bg-blue-400 hover:bg-blue-500"> 
                 <i class="fa-brands fa-github"></i> GitHub
@@ -120,26 +115,44 @@
           <div>
             <p class="text-xl font-bold py-2">特徴</p>
             <ul class="list-inside list-disc">
-              <li>ピアノロール画像をリアルタイムに読み取り演奏をエミュレート</li>
-              <li>エミュレートした強弱(空気圧)をグラフでリアルタイムに表示</li>
+              <li>ピアノロール画像をリアルタイムに読み取り、演奏をエミュレート</li>
               <li>自動演奏ピアノの3大ブランドAmpico, Duo-Art, Welteを始めとする多様なフォーマットに対応</li>
-              <li>キーボード操作による手動での強弱表現に対応</li>
+              <li>エミュレートした強弱(空気圧)をグラフで表示</li>
               <li>入力画像は標準的な.jpgや.png等に加え、ロールスキャン専用の.CISに対応</li>
               <li>Windows / MacOSに対応</li>
             </ul>
           </div>
 
           <div>
+            <p class="text-xl font-bold py-2">ダウンロード</p>
+            <div class="flex flex-wrap gap-2">
+              <a href="https://github.com/nai-kon/PlaySK-Piano-Roll-Reader/releases/latest/download/PlaySK-PianoRoll-Reader-Win.x64.zip" target="_blank">
+                <div class="text-xl text-white py-3 px-10 rounded-xl bg-green-400 hover:bg-green-500"> 
+                  Windows <i class="fa-solid fa-download"></i>
+                </div>
+              </a>                
+              <a href="https://github.com/nai-kon/PlaySK-Piano-Roll-Reader/releases/latest/download/PlaySK-PianoRoll-Reader-Mac.ARM.zip" target="_blank">
+                <div class="text-xl text-white py-3 px-10 rounded-xl bg-green-400 hover:bg-green-500"> 
+                  Mac (M1~3) <i class="fa-solid fa-download"></i>
+                </div>
+              </a>
+              <a href="https://github.com/nai-kon/PlaySK-Piano-Roll-Reader/releases/latest/download/PlaySK-PianoRoll-Reader-Mac.x64.zip" target="_blank">
+                <div class="text-xl text-white py-3 px-10 rounded-xl bg-green-400 hover:bg-green-500"> 
+                  Mac (Intel) <i class="fa-solid fa-download"></i>
+                </div>
+              </a>
+            </div>      
+          </div>
+
+          <div>
             <p class="text-xl font-bold flex gap-2 py-2">ユーザーの声</p>
-            <div class="bg-slate-200 rounded-xl font-medium italic p-3">
-              <ul class="list-inside list-disc">
-                <li>This is absolutely wonderful! (アメリカ アトランタ州)</li>
-                <li>Your software is so useful and enjoyable. (ニュージーランド)</li>
-                <li>Your 3.0 emulator is perfect, all the changes in the dynamics are appropriate and as to the truth. (イタリア)</li>
-                <li>The emulated Disklavier performance here sounds essentially identical to the pneumatic performance on a well-restored Ampico, to my ear. (アメリカ ユタ州)</li>
-                <li>It has been a dream to finally be able to hear what Recordo and ArtEcho rolls sound like and you made my dream a reality. (アメリカ カリフォルニア州)</li>
-                <li>I am enjoying experimenting with your software. It's great to be able to see the roll! (イギリス)</li>
-              </ul>
+            <div class="bg-slate-200 rounded-xl font-medium p-2">
+              <p>"This is absolutely wonderful!" (アメリカ アトランタ州)</p>
+              <p>"Your software is so useful and enjoyable." (ニュージーランド)</p>
+              <p>"Your 3.0 emulator is perfect, all the changes in the dynamics are appropriate and as to the truth." (イタリア)</p>
+              <p>"The emulated Disklavier performance here sounds essentially identical to the pneumatic performance on a well-restored Ampico, to my ear." (アメリカ ユタ州)</p>
+              <p>"It has been a dream to finally be able to hear what Recordo and ArtEcho rolls sound like and you made my dream a reality." (アメリカ カリフォルニア州)</p>
+              <p>"I am enjoying experimenting with your software. It's great to be able to see the roll!" (イギリス)</p>
             </div>
           </div>
 
@@ -173,17 +186,10 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <img src="img/DigitRecog.gif">
             <div>
-              <p>昔、機械学習の勉強で作成したシンプルな手書き数字認識のWebアプリです。</p>
-              <p>MNISTの手書き画像をシンプルな2層CNN+全結合層からなるネットワークで学習しています。</p>
-              <p>入門用にAIの入出力を分かりやすく表示しており、GitHubで最もスターが多いです。</p>
+              <p>昔、機械学習の勉強で作成したシンプルな手書き数字認識のWebアプリです。ネットワークは2層のCNNと全結合層で、MNISTの手書き画像を学習しています。</p>
+              <p>バックエンドはPython/Flask/pytorch、フロントエンドはHTML5/JavaScript/TailwindCSSで構成。</p>
               <p>以前は自宅SVにホストしていましたが、現在はGoogle App Engineにホストしています。</p>
-
-              <ul class="list-inside list-disc">
-                <li>言語/FW/Lib：Python, PyTorch, Flask, Pillow, HTML5, JavaScript, TailwindCSS</li>
-                <li>インフラ：Google App Engine</li>
-                <li>開発：VSCode, GitHub</li>
-              </ul>
-                  <div class="flex flex-wrap gap-2 my-5">
+              <div class="flex flex-wrap gap-2 my-5">
                 <a href="https://digit-recog-torch.uc.r.appspot.com/" target="_blank">
                   <div class="text-xl text-white py-3 px-10 rounded-xl bg-blue-400 hover:bg-blue-500"> 
                     <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Site
@@ -205,13 +211,8 @@
             <img src="img/ChatWebUI.gif">
             <div>
               <p>OpenAI社のGPT-4のAPIを呼ぶChatGPT風のWebアプリです。これまで月額3000円でChatGPT Plusを契約していましたがAPIを呼んだ方が安上がりのため自作しました。</p>
-              <p>チャットの作成・削除、自動スクロール等の基本機能を備え、回答後にタイトルを自動生成する動作がミソです。</p>
-              <p>ローカルサーバー上で動作し、チャット履歴はブラウザのローカルストレージに保存するシンプルな仕様です。</p>
-
-              <ul class="list-inside list-disc">
-                <li>言語/FW/Lib：React, Vite, TailwindCSS, OpenAI API</li>
-                <li>開発：VSCode, GitHub</li>
-              </ul>
+              <p>本家同様、チャットのタイトルを自動生成する動作がミソです。</p>
+              <p>Vite+React+TailwindCSSで構成しています。Windowsのスタートアップスクリプトからnpm run devで起動し、チャット履歴はブラウザのローカルストレージに保存するシンプルな仕様です。</p>
               <div class="flex gap-2 my-5">
                 <a href="https://github.com/nai-kon/PrivateChatGPT" target="_blank">
                   <div class="text-xl text-white py-3 px-10 rounded-xl bg-blue-400 hover:bg-blue-500"> 
@@ -228,14 +229,10 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <img src="img/img_filter.gif">
             <div>
-              <p>Twitterの画像をマルチモーダルAIで分類して表示するWebアプリです。</p>
-              <p>Seleniumでブラウザから画像をスクレイピングし、BLIP-2でVQAで一問一答して分類を行い一覧表示します。</p>
-              <p>ImageNetで学習したResNetでの画像分類も検討しましたが、ImageNetの分類ラベルに必要な分類が無く、VQAでは物体の状態(例:"座る犬" or "走る犬")まで解るためBLIP-2を使用しています。</p>
-              <p>AIはローカルPCのRTX3060 12GB上で動作させており、GPUの遊びを減らすため画像の取得と分類は並列処理しています。</p>
-              <ul class="list-inside list-disc">
-                <li>言語/FW/Lib：Python, Transformers, Selenium, Flask, Pillow, HTML5, JavaScript, CSS</li>
-                <li>開発：VSCode, GitHub, Poetry</li>
-              </ul>
+              <p>マルチモーダルAI(BLIP-2)でTwitterの画像をお好みで分類して表示するWebアプリです。</p>
+              <p>Seleniumでブラウザから画像をスクレイピングし、VQAで一問一答して分類を行い一覧表示します。</p>
+              <p>ImageNetで学習したResNetでの画像分類も可能ですが、ImageNetの分類ラベルに欲しい分類が無い & BLIP-2だと物体の状態(例:"座っている犬" or "走っている犬")まで解るためVQAを使用しています。</p>
+              <p>バックエンドはPython/Flask/pytorch、フロントエンドはHTML5/JavaScript/TailwindCSSで構成しています。</p>
             </div>
           </div>
         </div>
@@ -248,15 +245,13 @@
               <img class="h-[315px]" src="img/Homebuild Piano Roll Scanner.jpg">
             </a>
           </div>
-          <p>ピアノロールを自動でスキャンする装置です。</p>
-          <p>通常のピアノロールのスキャナーは一次元のラインスキャンセンサーでロールを巻き取りながら連続的に撮影しており、専用のハードウェアが必要です。</p>
-          <p>この装置は市販カメラを用いてピアノロールの撮影と紙送りを自動で行い、撮影した数百枚の画像をソフトウェアで自動的に繋ぎ合わせます。</p>
-          <p>紙送りはebayで落札した実物の自動演奏ピアノの巻き取り装置をArduinoで制御したステッピングモーターで駆動し、撮影はソニーの一眼カメラを付属ソフト(Imaging Edge)をRPAで操作しています。</p>
+
+          <p>一般的なピアノロールの読取装置はロールを巻き取りながら一次元のラインスキャンセンサーで連続的に撮影するため専用ハードが必要です。</p>
+          <p>この装置は市販カメラを用いて、ピアノロールの撮影と紙送りを自動で繰り返し、撮影した数百枚の画像をソフトウェアで自動的に繋ぎ合わせます。</p>
+          <p>紙送りはebayで落札した実物の自動演奏ピアノの巻き取り装置をArduinoで制御したステッピングモーターで駆動し、撮影はソニーのミラーレス一眼を付属ソフト(Imaging Edge)からpywinautoで自動操作しています。</p>
           <p>位置合わせでは画像同士のオーバーラップ部分で画素の差分が最小となる座標を算出して繋ぎ合わせています。</p>
-          <ul class="list-inside list-disc">
-            <li>言語/FW/Lib：Arduino, Python, OpenCV, Pywinauto</li>
-            <li>開発：VSCode, GitHub, Poetry</li>
-          </ul>
+          <p>性質上、繋ぎ合わせの部分に僅かなズレが生じますが、PlaySK Piano Roll Readerでエミュレートする分には問題ありません。</p>
+
           <p class="font-bold pt-2">・繋ぎ合わせ結果 (Duo-Art 5540 El Choclo)</p>          
           <div class="grid grid-cols-1 md:grid-cols-5 gap-2">
             <a href="img/Duo-Art El Choclo.jpg" data-lightbox="group2"><img class="h-[200px]" src="img/Duo-Art El Choclo.jpg"></a>
@@ -269,7 +264,7 @@
           <p class="font-bold pt-2 clear-both">・PlaySK Piano Roll Readerでの演奏例 (Duo-Art 5877 Chopin Piano Sonata No.3 4th mvt)</p> 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-2 justify-items-start">
             <a href="img/Duo-Art Chopin Sonata.jpg" data-lightbox="group2"><img class="h-[315px]" src="img/Duo-Art Chopin Sonata.jpg"></a>
-            <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/dP3rEjN3nOM?si=jMZaiQOWMjMVys4B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="w-full h-[315px]" src="https://www.youtube.com/embed/dP3rEjN3nOM?si=jMZaiQOWMjMVys4B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <a href="img/Duo-Art 5877 Chopin Sonara No.3 finale tempo90.tif" target="_blank"><img class="h-[315px]" src="img/Duo-Art 5877 thumb.jpg"></a>
           </div>
         </div>

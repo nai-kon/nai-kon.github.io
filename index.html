@@ -249,10 +249,10 @@
             <div>
               <p>Twitterの画像をマルチモーダルAIで分類して表示するWebアプリです。</p>
               <p>Seleniumでブラウザから画像をスクレイピングし、BLIP-2を用いて画像を一問一答でVQAして分類を行い一覧表示します。</p>
-              <p>ImageNetで学習したResNetでの画像分類も検討しましたが、ImageNetの分類ラベルに必要な分類が無く、VQAでは物体の状態(例:"座る犬" or "走る犬")まで解るためBLIP-2を使用しています。</p>
-              <p>AIはローカルPCのRTX3060 12GB上で動作し、スクレイピングと分類を並列に動作させることで効率的に動作させています。</p>
+              <p>ImageNetで学習済みのResNetでの画像分類も検討しましたが、必要な分類が無かったりVQAでは物体の状態(例:"座る犬" or "走る犬")まで解ることからBLIP-2を採用しました。</p>
+              <p>AIはローカルPCのRTX3060 12GB上で動作しており、画像のスクレイピングとAIの分類を並列処理することでGPUの使用効率を高めています。</p>
               <ul class="list-inside list-disc">
-                <li>言語/FW/Lib：Python, Transformers, Selenium, Flask, Pillow, HTML5, JavaScript, CSS</li>
+                <li>言語/FW/Lib：Python, Transformers, Selenium, Flask, Pillow, HTML5, JavaScript, CSS, LightBox2</li>
                 <li>開発：VSCode, GitHub, Poetry</li>
               </ul>
               <div class="flex gap-2 my-5">

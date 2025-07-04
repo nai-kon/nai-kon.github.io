@@ -87,9 +87,9 @@
           <p>2014年の初版以降改良を重ね、現在ではアメリカやオーストラリア、ニュージーランド、ドイツ、イタリア、南アフリカなど世界各国の自動演奏楽器の愛好家が使っており、ユーザーの要望に応じた機能追加を随時行っています。</p>
           
           <ul class="list-inside list-disc">
-            <li>言語/FW/Lib：Python, wxPython, OpenCV, NumPy, Cython, Mido</li>
+            <li>言語/FW/Lib：Python, wxPython, OpenCV, NumPy, Cython, Mido, uv, pyinstaller</li>
             <li>クラウド：Cloudflare Workers, Cloudflare D1 (アップデート通知、アクセス解析用)</li>
-            <li>開発：VSCode, GitHub, Poetry</li>
+            <li>開発：VSCode, GitHub</li>
             <li>CI/CD：GitHub Actions(テスト、ビルド、コード署名、リリース)</li>
           </ul>
 
@@ -175,6 +175,34 @@
                   <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/v1P6m5cLBtM?si=XqtOwz4G7L9ErqC9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   <div class="text-sm italic text-center text-blue-600">チャイコフスキー「花のワルツ」、Aeolian Duo-Artパイプオルガンロールより</div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-2 mt-15">
+          <p class="text-2xl font-bold bg-slate-200 my-2 px-2" id="roll image converter">MIDIをピアノロール画像に変換するソフト</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <a href="img/roll image converter.webp" data-lightbox="group2">
+              <img class="object-contain w-full" src="img/roll image converter thumb.webp">
+            </a>
+            <div>
+              <p>MIDIファイルをリアルなピアノロール画像に変換するソフトです。アメリカのユーザから要望があり作成しました。</p>
+              <p>出力画像は先述のピアノロールのエミュレーションソフトで再生して楽しめます。</p>
+              <p>外部サービスで出力画像をCNCの制御ファイル(G-Code)に変換すればロール紙からピアノロールをパンチできます。</p>
+
+              <ul class="list-inside list-disc">
+                <li>言語/FW/Lib：Python, CustomTkinter, Pillow, mido, uv, pyinstaller</li>
+                <li>クラウド：Cloudflare Workers, Cloudflare D1 (アップデート通知、アクセス解析用)</li>
+                <li>開発：VSCode, GitHub</li>
+                <li>CI/CD：GitHub Actions(テスト、ビルド、コード署名、リリース)</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 my-5">
+                <a href="https://github.com/nai-kon/Midi-Image-Converter" target="_blank">
+                  <div class="text-xl text-white py-3 px-10 rounded-xl bg-blue-400 hover:bg-blue-500"> 
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </div>
+                </a>
               </div>
             </div>
           </div>

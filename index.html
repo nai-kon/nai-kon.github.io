@@ -268,19 +268,19 @@
         </div>
 
         <div class="p-2 mt-15">
-          <p class="text-2xl font-bold bg-slate-200 my-2 px-2" id="Twitter Image Filter">Twitterの画像をAIで選別して表示するWebアプリ</p>
+          <p class="text-2xl font-bold bg-slate-200 my-2 px-2" id="Twitter Image Filter">Xのタイムライン画像をAIで選別して表示するWebアプリ</p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <a href="img/img_filter.gif" data-lightbox="group3">
               <img class="object-contain w-full" src="img/img_filter.gif">
             </a>
             <div>
-              <p>Twitterの画像をマルチモーダルAIで分類して表示するWebアプリです。</p>
-              <p>Seleniumでブラウザから画像をスクレイピングし、BLIP-2を用いて画像を一問一答でVQAして分類を行い一覧表示します。</p>
-              <p>ImageNetで学習済みのResNetでの画像分類も検討しましたが、必要な分類が無かったりVQAでは物体の状態(例:"座る犬" or "走る犬")まで解ることからBLIP-2を採用しました。</p>
-              <p>AIはローカルPCのRTX3060 12GB上で動作しており、画像のスクレイピングとAIの分類を並列処理することでGPUの使用効率を高めています。</p>
+              <p>Xのタイムライン画像をマルチモーダルAIで分類して表示するWebアプリです。</p>
+              <p>Seleniumでブラウザから画像をスクレイピングし、Qwen3-VL-8Bで画像中の物体を検出し、指定した物体を含む画像をフィルタリングして一覧表示します。</p>
+              <p>当初はImageNetで学習済みのResNetでの画像分類も検討しましたが、画像中の物体の状態(例:"座る犬" or "走る犬")まで解ることからVLMを採用しました。</p>
+              <p>AIはローカルPCのGPU上で動作しており、画像のスクレイピングとAIの分類を並列処理することでGPUの使用効率を高めています。</p>
               <ul class="list-inside list-disc">
-                <li>言語/FW/Lib：Python, Transformers, Selenium, Flask, Pillow, HTML5, JavaScript, CSS, LightBox2</li>
-                <li>開発：VSCode, GitHub, Poetry</li>
+                <li>言語/FW/Lib：Python, llama-server, Selenium, Flask, Pillow, HTML5, JavaScript, CSS, LightBox2</li>
+                <li>開発：VSCode, GitHub, uv</li>
               </ul>
               <div class="flex gap-2 my-5">
                 <div class="text-xl text-white py-3 px-10 rounded-xl bg-gray-300"> 
